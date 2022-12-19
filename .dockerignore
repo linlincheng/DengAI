@@ -1,0 +1,48 @@
+### Python ###
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Dart
+.darts
+
+# IPython
+profile_default/
+ipython_config.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# OSX specific
+.DS_Store
+
+# End of https://www.toptal.com/developers/gitignore/api/python
+
+# Exclude code-coverage data
+.coverage
+
+# Notebooks
+notebooks/
+
+# Cache
+.cache
+.mypy_cache
+
+.git
+
+# Editor setting
+.vscode/
+
+# scratch repo and results
+extra/
+results/
