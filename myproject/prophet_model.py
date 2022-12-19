@@ -37,12 +37,9 @@ def set_prophet_param_grid():
     """Setting up Prophet parameter search grid"""
     grid_params = {
         "seasonality_mode": ["additive", "multiplicative"],
-        "changepoint_prior_scale": [0.1],
-        "seasonality_prior_scale": [1],
-        "regressor_prior_scale": [1],
-        # "changepoint_prior_scale": [0.001, 0.01, 0.1],
-        # "seasonality_prior_scale": [0.01, 0.1, 1],
-        # "regressor_prior_scale": [0.01, 0.1, 1],
+        "changepoint_prior_scale": [0.001, 0.01, 0.1],
+        "seasonality_prior_scale": [0.01, 0.1, 1],
+        "regressor_prior_scale": [0.01, 0.1, 1],
     }
     return grid_params
 
