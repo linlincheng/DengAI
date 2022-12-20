@@ -72,7 +72,7 @@ def optimize_SARIMAX(
             continue
 
     result_df = pd.DataFrame(results)
-    result_df.columns = ["(p,d,q,P,D,Q)", "AIC"] # type: ignore
+    result_df.columns = ["(p,d,q,P,D,Q)", "AIC"]  # type: ignore
 
     # Sort in ascending order, lower AIC is better
     result_df = result_df.sort_values(by="AIC", ascending=True).reset_index(drop=True)
