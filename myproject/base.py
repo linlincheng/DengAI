@@ -8,33 +8,6 @@ from utils.utils import (
 )
 
 
-TARGET = "total_cases"
-EXOGENOUS_VARS = [
-    "ndvi_ne",
-    "ndvi_nw",
-    "ndvi_se",
-    "ndvi_sw",
-    "precipitation_amt_mm",
-    "reanalysis_air_temp_k",
-    "reanalysis_avg_temp_k",
-    "reanalysis_dew_point_temp_k",
-    "reanalysis_max_air_temp_k",
-    "reanalysis_min_air_temp_k",
-    "reanalysis_precip_amt_kg_per_m2",
-    "reanalysis_relative_humidity_percent",
-    "reanalysis_sat_precip_amt_mm",
-    "reanalysis_specific_humidity_g_per_kg",
-    "reanalysis_tdtr_k",
-    "station_avg_temp_c",
-    "station_diur_temp_rng_c",
-    "station_max_temp_c",
-    "station_min_temp_c",
-    "station_precip_mm",
-]
-
-S = 52
-
-
 def process_features(data):
     """Preprocess base dataframe features"""
     data["week_start_date"] = pd.to_datetime(data.week_start_date)
